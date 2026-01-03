@@ -43,6 +43,14 @@ const Navbar = () => {
             </li>
             <li>
               <Link
+                className={pathname === "/gallery" ? activeClass : normalClass}
+                href="/gallery/"
+              >
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
                 className={pathname === "/about" ? activeClass : normalClass}
                 href="about/"
               >
